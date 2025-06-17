@@ -1,0 +1,15 @@
+# Ignore build artifacts and OS files
+main.exe
+*.o
+*.obj
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore system files
+*.swp
+*.swo
