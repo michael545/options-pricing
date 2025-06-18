@@ -1,4 +1,4 @@
-# Ignore build artifacts and OS files
+# build artifacts and OS files
 main.exe
 *.o
 *.obj
@@ -7,9 +7,10 @@ main.exe
 .DS_Store
 Thumbs.db
 
-# Ignore VS Code settings
+#  vsCode settings
 .vscode/
+build/
 
-# Ignore system files
+#  system files
 *.swp
 *.swo

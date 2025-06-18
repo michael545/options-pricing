@@ -1,4 +1,4 @@
-# Options Pricing Model (C++)
+# Options Pricing Models Quantlib 1.38
 
 This repository contains C++ code for modeling and pricing financial options.
 
@@ -11,4 +11,4 @@ This repository contains C++ code for modeling and pricing financial options.
 2. Run: Execute `main.exe` after building.
 
 ## Notes
-- This project is for educational and prototyping purposes.
+- This is for educational and prototyping purposes.
