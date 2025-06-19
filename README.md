@@ -11,4 +11,4 @@ This repository contains C++ code for modeling and pricing financial options.
 2. Run: Execute `main.exe` after building.
 
 ## Notes
-- This is for educational and prototyping purposes.
+- for educational and prototyping purposes only !!!.
