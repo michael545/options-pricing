@@ -1,4 +1,4 @@
-# Options Pricing Models (QuantLib 1.38)
+# Options Pricing Models/Approaches (QuantLib 1.38)
 
 This project contains C++ code for modeling and pricing financial options using QuantLib and exploring different pricing models (European, American, and Asian options).
 
@@ -56,7 +56,7 @@ cmake -B build -DCMAKE_TOOLCHAIN_FILE=C:/dev/vcpkg/scripts/buildsystems/vcpkg.cm
 cmake --build build
 ```
  Run :
- After building, do:
+ after building, do:
 ```Powershell
  ./build/Release/main.exe
 ```
