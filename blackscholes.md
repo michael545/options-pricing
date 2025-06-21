@@ -1,4 +1,4 @@
-# **An Intuitive Guide to the Black-Scholes Model**
+# **An Intuitive Guide to Black-Scholes **
 
 The Black-Scholes model provides a theoretical price for European-style options. Its core insight is that one can determine a fair price not by predicting the stock's direction, but by creating a risk-free position.
 
@@ -7,14 +7,14 @@ The Black-Scholes model provides a theoretical price for European-style options.
 The model's foundation is the concept of a **delta-hedged portfolio**. Imagine you sell a call option. To offset the risk of the stock price rising, you buy a certain number of shares of that same stock.
 
 - **Portfolio:** You are simultaneously **short a call option** and **long the underlying stock**.
-- **Delta (Δ):** You buy a specific number of shares (the option's "delta") so that for small, instantaneous price changes, the gain on your stock position perfectly cancels out the loss on your option position (and vice-versa).
+- **Delta (Δ):** You buy a specific number of shares (option's "delta") so that for small, instantaneous price changes, the gain on your stock position perfectly cancels out the loss on your option position (and vice-versa).
 - **The Result:** For that moment, your portfolio's value doesn't change with the stock price. It is momentarily **riskless**.
 
-Because this delta changes, a trader must continuously re-balance the portfolio to maintain this risk-free state. This is called **dynamic hedging**.
+Because this delta changes, a trader must continuously re-balance the portfolio to maintain this risk-free state. This is known as **dynamic (delta) hedging**.
 
-### **2\. The Mathematical Trick: The "Risk-Neutral World"**
+### **2\. Mathematical Trick: The "Risk-Neutral World"**
 
-Since the hedged portfolio is riskless, it must logically earn the **risk-free interest rate (r)**, just like a government bond. Any other return would create an arbitrage opportunity.
+Since the hedged portfolio is riskless, it must logically earn the **risk-free interest rate (r)**, just like a muni. Any other return would create an arbitrage opportunity.
 
 This leads to a powerful mathematical simplification: we can price the option as if we were in a **risk-neutral world**. In this hypothetical world:
 
@@ -23,9 +23,9 @@ This leads to a powerful mathematical simplification: we can price the option as
 
 The price calculated in this imaginary world is the same as in the real world because it's based on the no-arbitrage condition of the hedged portfolio, not on anyone's risk appetite.
 
-### **3\. Deconstructing the Formula**
+### **3\. the Formula (Intuition)**
 
-The famous Black-Scholes formula for a call option can be thought of as the net result of what you expect to receive versus what you expect to pay, all adjusted for probability and time.
+The formula for a call option can be thought of as the net result of what you expect to receive versus what you expect to pay, all adjusted for probability and time.
 
 **Formula:** C = S₀ \* N(d₁) - K \* e⁻ʳᵀ \* N(d₂)
 
@@ -50,7 +50,7 @@ The model's elegance relies on several key assumptions that don't perfectly matc
 
 - **Constant Volatility & Interest Rates:** It assumes these are known and unchanging, which they are not.
 - **Lognormal Price Distribution:** It assumes stock prices move randomly and smoothly, which doesn't account for sudden market shocks or crashes ("fat tails").
-- **No Dividends:** The basic formula assumes the stock pays no dividends.
+- **No Dividends:** The basic formula assumes the stock pays/will not pay no dividends.
 - **Frictionless Markets:** It assumes no transaction costs, no taxes, and the ability to trade continuously.
 
 Because of these assumptions, the Black-Scholes price is a theoretical benchmark, not always the exact market price.
