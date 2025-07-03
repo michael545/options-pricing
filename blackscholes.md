@@ -33,6 +33,16 @@ $$
 C = S_0 \cdot N(d_1) - K \cdot e^{-rT} \cdot N(d_2)
 $$
 
+Where `d₁` and `d₂` are calculated as:
+
+$$
+d_1 = \frac{\ln(S_0/K) + (r + \frac{\sigma^2}{2})T}{\sigma\sqrt{T}}
+$$
+
+$$
+d_2 = d_1 - \sigma\sqrt{T}
+$$
+
 This can be read as: **Call Price = (Present Value of Receiving the Stock) - (Present Value of Paying the Strike Price)**
 
 #### **Term 1: S₀ \* N(d₁) — What You Expect to Get**
