@@ -55,3 +55,8 @@ The model's elegance relies on several key assumptions that don't perfectly matc
 - **Frictionless Markets:** It assumes no transaction costs, no taxes, and the ability to trade continuously.
 
 Because of these assumptions, the Black-Scholes price is a theoretical benchmark, not always the exact market price.
+
+
+$$
+C = S_0 \cdot N(d_1) - K \cdot e^{-rT} \cdot N(d_2)
+$$
