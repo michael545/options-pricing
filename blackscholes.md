@@ -39,8 +39,14 @@ $$
 d_1 = \frac{\ln(S_0/K) + (r + \frac{\sigma^2}{2})T}{\sigma\sqrt{T}}
 $$
 
-$$
+$$ 
 d_2 = d_1 - \sigma\sqrt{T}
+$$
+
+And `N(x)` is the cumulative distribution function (CDF) of the most basic normal distribution, which gives the probability that a standard normal random variable is <= to `x`:
+
+$$
+N(x) = \int_{-\infty}^{x} \frac{1}{\sqrt{2\pi}} e^{-\frac{t^2}{2}} dt
 $$
 
 This can be read as: **Call Price = (Present Value of Receiving the Stock) - (Present Value of Paying the Strike Price)**
