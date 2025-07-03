@@ -31,7 +31,7 @@ The price calculated in this imaginary world is the same as in the real world be
 The formula for a call option can be thought of as the net result of what you expect to receive versus what you expect to pay, all adjusted for probability and time.
 
 **Formula:** 
-![Black-Scholes equation](assets/bs_form.png)
+![Black-Scholes formula](assets/bs_form.png)
 
 
 This can be read as: **Call Price = (Present Value of Receiving the Stock) - (Present Value of Paying the Strike Price)**
