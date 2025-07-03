@@ -1,6 +1,5 @@
 
-![Black-Scholes formula](https://latex.codecogs.com/svg.image?
-C%20%3D%20S_0%20\cdot%20N(d_1)%20-%20K%20\cdot%20e^{-rT}%20\cdot%20N(d_2))
+![Black-Scholes formula](https://latex.codecogs.com/svg.image?C%20%3D%20S_0%20\cdot%20N(d_1)%20-%20K%20\cdot%20e^{-rT}%20\cdot%20N(d_2))
 
 # **An Intuitive Guide to Black-Scholes **
 
