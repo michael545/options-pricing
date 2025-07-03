@@ -1,4 +1,6 @@
-![Black-Scholes formula](https://latex.codecogs.com/svg.image?C%20%3D%20S_0%20\cdot%20N(d_1)%20-%20K%20\cdot%20e^{-rT}%20\cdot%20N(d_2))
+$$
+C = S_0 \cdot N(d_1) - K \cdot e^{-rT} \cdot N(d_2)
+$$
 
 # **An Intuitive Guide to Black-Scholes **
 
@@ -30,8 +32,9 @@ The price calculated in this imaginary world is the same as in the real world be
 The formula for a call option can be thought of as the net result of what you expect to receive versus what you expect to pay, all adjusted for probability and time.
 
 **Formula:** 
-![Black-Scholes formula](https://latex.codecogs.com/svg.image?C%20%3D%20S_0%20\cdot%20N(d_1)%20-%20K%20\cdot%20e^{-rT}%20\cdot%20N(d_2))
-
+$$
+C = S_0 \cdot N(d_1) - K \cdot e^{-rT} \cdot N(d_2)
+$$
 
 This can be read as: **Call Price = (Present Value of Receiving the Stock) - (Present Value of Paying the Strike Price)**
 
