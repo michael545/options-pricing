@@ -10,7 +10,7 @@ The model's foundation is the concept of a **delta-hedged portfolio**. Imagine y
 - **Delta (Δ):** You buy a specific number of shares (option's "delta") so that for small, instantaneous price changes, the gain on your stock position perfectly cancels out the loss on your option position (and vice-versa).
 - **The Result:** For that moment, your portfolio's value doesn't change with the stock price. It is momentarily **riskless**.
 
-Because this delta changes, a trader must continuously re-balance the portfolio to maintain this risk-free state. This is known as **dynamic (delta) hedging**.
+Because this delta changes, a trader must continuously re-balance the portfolio to maintain this risk-free state. Also known as **dynamic (delta) hedging**.
 
 ### **2\. Mathematical Trick: The "Risk-Neutral World"**
 
@@ -27,7 +27,11 @@ The price calculated in this imaginary world is the same as in the real world be
 
 The formula for a call option can be thought of as the net result of what you expect to receive versus what you expect to pay, all adjusted for probability and time.
 
-**Formula:** C = S₀ \* N(d₁) - K \* e⁻ʳᵀ \* N(d₂)
+**Formula:** 
+$$
+C = S_0 \cdot N(d_1) - K \cdot e^{-rT} \cdot N(d_2)
+$$
+
 
 This can be read as: **Call Price = (Present Value of Receiving the Stock) - (Present Value of Paying the Strike Price)**
 
