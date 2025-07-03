@@ -1,7 +1,3 @@
-$$
-C = S_0 \cdot N(d_1) - K \cdot e^{-rT} \cdot N(d_2)
-$$
-
 # **An Intuitive Guide to Black-Scholes **
 
 The Black-Scholes model provides a theoretical price for European-style options. Its core insight is that one can determine a fair price not by predicting the stock's direction, but by creating a risk-free position.
