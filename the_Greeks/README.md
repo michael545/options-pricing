@@ -71,4 +71,6 @@ Where:
 *   **Why it Matters**: Rho is generally the least significant Greek for most short-term options traders, as interest rates move slowly and the effect is small over short periods. Its impact becomes more pronounced for long-term options.
 *   **Mathematical Formula**: Rho is the first partial derivative of the option price (C) with respect to the risk-free interest rate (r).
 
-    $$ \rho = \frac{\partial C}{\partial r} = K T e^{-rT} N(d_2) $$
+    $$
+     \rho = \frac{\partial C}{\partial r} = K T e^{-rT} N(d_2)
+    $$
