@@ -1,0 +1,131 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4052,        123]
+NotebookOptionsPosition[      3401,        106]
+NotebookOutlinePosition[      3817,        122]
+CellTagsIndexPosition[      3774,        119]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.96098354268099*^9, 3.9609835590686073`*^9}, {
+   3.9609844253555145`*^9, 3.960984431218937*^9}, 
+   3.9609988066747036`*^9},ExpressionUUID->"65e02ebd-799a-e543-b91d-\
+2708ceee6696"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"r", "=", "0.05"}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"risk", "-", 
+    RowBox[{"free", " ", "rate"}]}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"sigma", "=", "0.2"}], ";"}], " ", 
+  RowBox[{"(*", "vol", "*)"}], "\[IndentingNewLine]", "\n", 
+  RowBox[{"(*", 
+   RowBox[{"Black", "-", 
+    RowBox[{"Scholes", " ", "operator"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"op", "=", 
+   RowBox[{
+    RowBox[{"D", "[", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"S", ",", "t"}], "]"}], ",", "t"}], "]"}], "+", 
+    RowBox[{"r", "*", "S", "*", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"S", ",", "t"}], "]"}], ",", "S"}], "]"}]}], "+", 
+    RowBox[{"0.5", "*", 
+     RowBox[{"sigma", "^", "2"}], "*", 
+     RowBox[{"S", "^", "2"}], "*", 
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"S", ",", "t"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"S", ",", "2"}], "}"}]}], "]"}]}], "-", 
+    RowBox[{"r", "*", 
+     RowBox[{"V", "[", 
+      RowBox[{"S", ",", "t"}], "]"}]}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.9609988203366585`*^9, 3.9609988203366585`*^9}, 
+   3.9609996389572506`*^9, 3.961049301109894*^9, {3.9610493316317368`*^9, 
+   3.961049337272543*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"57dee295-b83e-954e-8bf9-e871c086e796"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9609988093442554`*^9, 
+  3.9609988093442554`*^9}},ExpressionUUID->"36a27ab8-1ca9-ec48-aa11-\
+73f54d2e84d4"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"K", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"T", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Solve", " ", "the", " ", "PDE"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"callPrice", "[", 
+   RowBox[{"S_", ",", "t_"}], "]"}], "=", 
+  RowBox[{"DSolveValue", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"op", "==", "0"}], ",", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"S", ",", "T"}], "]"}], "==", 
+       RowBox[{"Max", "[", 
+        RowBox[{
+         RowBox[{"S", "-", "K"}], ",", "0"}], "]"}]}]}], "}"}], ",", 
+    RowBox[{"V", "[", 
+     RowBox[{"S", ",", "t"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"S", ",", "t"}], "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.960998830236391*^9, 3.960998830236391*^9}, {
+  3.960999618093361*^9, 3.9609996248686275`*^9}, {3.9610493088409863`*^9, 
+  3.9610493134644985`*^9}},ExpressionUUID->"4a09c63d-24d4-9b4b-a9ca-\
+b03570ed46df"]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{-670.5, Automatic}, {143.25, Automatic}},
+FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (December 26, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8614c4c2-2ad1-564d-8e7d-2f40ef3246f4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 230, 4, 28, "Input",ExpressionUUID->"65e02ebd-799a-e543-b91d-2708ceee6696"],
+Cell[787, 26, 1409, 41, 174, "Input",ExpressionUUID->"57dee295-b83e-954e-8bf9-e871c086e796"],
+Cell[2199, 69, 156, 3, 28, "Input",ExpressionUUID->"36a27ab8-1ca9-ec48-aa11-73f54d2e84d4"],
+Cell[2358, 74, 1039, 30, 123, "Input",ExpressionUUID->"4a09c63d-24d4-9b4b-a9ca-b03570ed46df"]
+}
+]
+*)
+
